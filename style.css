@@ -9,15 +9,14 @@
   --text-dark: #1e293b;
   --text-light: #64748b;
   --success: #10b981;
-  --danger: #FF6B6B;
-  --danger-hover: #FF5252;
+  --danger: #E53E3E;
+  --danger-hover: #C53030;
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--body-bg);
   color: var(--text-dark);
-  
 }
 
 .container-fluid {
@@ -25,17 +24,17 @@ body {
 }
 
 .navbar {
-  background-color: var(--nav-bg) !important;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  background-color: var(--primary-color) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .bg-light {
-  background-color: var(--nav-bg);
+  background-color: var(--primary-color);
 }
 
 .navbar-brand {
   font-weight: 700;
-  color: var(--primary-color);
+  color: white;
   font-size: 1.5rem;
 }
 
@@ -93,7 +92,7 @@ body {
   border-radius: 8px;
 }
 
-.card-img-top, 
+.card-img-top,
 .card img {
   max-height: 300px;
   object-fit: cover;
@@ -190,7 +189,7 @@ body {
   border-color: #0d9488;
 }
 
-.delete-post-btn, 
+.delete-post-btn,
 .delete-comment-btn {
   border: none;
   background-color: transparent;
@@ -199,7 +198,7 @@ body {
   padding: 2px 8px;
 }
 
-.delete-post-btn:hover, 
+.delete-post-btn:hover,
 .delete-comment-btn:hover {
   background-color: var(--danger);
   color: white;
@@ -271,21 +270,33 @@ body {
   color: #cbd5e1;
 }
 
+.footer {
+  background-color: var(--primary-color) !important;
+  color: white;
+}
+
+.footer .text-primary {
+  color: white !important;
+}
+
+.footer .text-muted {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
 
 @media (max-width: 768px) {
   .post-form-section {
     width: 90% !important;
     margin: 0 auto 24px auto;
   }
-  
+
   .card {
     margin: 10px 5px !important;
   }
-  
+
   .form-signin {
     width: 90% !important;
   }
-  
+
   .comment-content {
     border-left: none;
     border-top: 1px solid #eaeaea;
@@ -293,4 +304,3 @@ body {
     padding-top: 1rem;
   }
 }
-
