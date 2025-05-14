@@ -1,16 +1,21 @@
 :root {
-  --primary-color: #6366f1;
-  --primary-hover: #4f46e5;
-  --secondary-color: #f0f4f8;
+  --primary-color: #4D5EF6;
+  --primary-hover: #3B4BD4;
+  --secondary-color: #6B78F7;
+  --secondary-hover: #5664E5;
+  --nav-bg: #FFFFFF;
+  --body-bg: #F0F2F5;
+  --card-bg: #FFFFFF;
   --text-dark: #1e293b;
   --text-light: #64748b;
   --success: #10b981;
-  --danger: #ef4444;
+  --danger: #FF6B6B;
+  --danger-hover: #FF5252;
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8fafc;
+  background-color: var(--body-bg);
   color: var(--text-dark);
 }
 
@@ -19,12 +24,12 @@ body {
 }
 
 .navbar {
-  background-color: white !important;
+  background-color: var(--nav-bg) !important;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
 .bg-light {
-  background-color: white;
+  background-color: var(--nav-bg);
 }
 
 .navbar-brand {
@@ -45,7 +50,7 @@ body {
 }
 
 .post-form-section {
-  background-color: white;
+  background-color: var(--card-bg);
   border-radius: 8px;
   padding: 24px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -76,6 +81,7 @@ body {
 
 .card {
   border: none;
+  background-color: var(--card-bg);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease;
   overflow: hidden;
@@ -84,10 +90,6 @@ body {
   width: 100%;
   max-width: 800px;
   border-radius: 8px;
-}
-
-.card:hover {
-  transform: translateY(-4px);
 }
 
 .card-img-top, 
@@ -163,8 +165,8 @@ body {
 }
 
 .btn-danger:hover {
-  background-color: #c0392b;
-  border-color: #c0392b;
+  background-color: var(--danger-hover);
+  border-color: var(--danger-hover);
 }
 
 .btn-outline-danger {
@@ -203,14 +205,14 @@ body {
 }
 
 .add-comment-btn {
-  color: var(--primary-color);
-  border-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 
 .add-comment-btn:hover {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: white;
-  border-color: var(--primary-color);
+  border-color: var(--secondary-color);
 }
 
 .input-group.mt-2 {
